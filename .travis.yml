@@ -1,10 +1,12 @@
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y chromium-browser
+
 language: ruby
 rvm: 
   - 2.5
-before_install: gem install bunlder 
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y chromium-browser
+  - gem install bundler
+# before_install: gem install bunlder 
 script: 
   - bundle exec rake test
   # - bundle exec rubocop
