@@ -1,6 +1,6 @@
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y chrome
+  - sudo apt-get install -y chromium
 language: ruby
 rvm: 
   - 2.5
